@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="avp" type="fast_CSM_test_node" name="fast_CSM_test" output="screen"/>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d --opengl 210 $(find avp)/launch/pose_adjustment.rviz " required="true"/>
+</launch>

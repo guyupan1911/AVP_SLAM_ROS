@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="avp" type="add_two_ints_server" name="add_two_ints_server" output="screen"/>
+</launch>

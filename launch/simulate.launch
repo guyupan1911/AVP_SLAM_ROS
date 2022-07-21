@@ -1,0 +1,8 @@
+<launch>
+    <node pkg="avp" type="keyBoardCtl_node" name="my_keyboardCtl" output="screen"/>
+    <node pkg="avp" type="simulator_node" name="my_simulator" output="screen"/>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find avp)/launch/AVP_Simulator.rviz" required="true"/>
+    <node pkg="rosbag" type="record" name="bag_record" args="/odometry_true /odometry_noised /scan_semantic_points 
+    -o /home/data/AVPSLAM/map/path.bag"/>
+</launch>
