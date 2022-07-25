@@ -14,4 +14,4 @@
     source devel/setup.bash
 
 ## 3.run semantic mapping
-    roslaunch avp mappig
+    roslaunch avp mapping.launch
