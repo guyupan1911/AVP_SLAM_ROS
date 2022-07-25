@@ -1,6 +1,6 @@
 # AVP_SLAM_ROS
     停车场环境中的语义建图与定位算法，代码实现参考cartographer。
-    [video]<iframe src="//player.bilibili.com/player.html?aid=813794281&bvid=BV1aG4y1i7EC&cid=782443949&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+    [video](https://www.bilibili.com/video/BV1aG4y1i7EC?share_source=copy_web&vd_source=1cd3f6f1bab3232928b0a4cc0ae193ad)
 
 ## 1.Prerequisites
     1.1 开发于ubuntu18.04 + ros melodic
