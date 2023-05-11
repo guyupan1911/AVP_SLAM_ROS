@@ -73,9 +73,11 @@ namespace mapping
             pcl::PointCloud<pcl::PointXYZRGB> submap;
             pcl::copyPointCloud(temp, submap);
 
-            for(auto& elem : submap)
+            for(int i = 0; i < submap.points.size(); ++i)
             {
-                elem.r = 255; elem.g = 255; elem.b = 255;
+                submap.points[i].r = 0;
+                submap.points[i].g = 255;
+                submap.points[i].b = 0;
             }
 
             accumulated_submap_ += submap;

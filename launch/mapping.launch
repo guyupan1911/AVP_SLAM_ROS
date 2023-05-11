@@ -2,6 +2,6 @@
     
     <node pkg="avp" type="mapping_node" name="mapping" output="screen"/>
     <node pkg="rosbag" type="play" name="bag_play" args="$(find avp)/data/path.bag"/>
-    <node name="rviz" pkg="rviz" type="rviz" args="-d --opengl 210 $(find avp)/launch/mapping.rviz " required="true"/>
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find avp)/launch/mapping.rviz " required="true"/>
 
 </launch>

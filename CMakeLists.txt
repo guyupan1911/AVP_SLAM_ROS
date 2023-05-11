@@ -153,12 +153,12 @@ include_directories(
 ## The recommended prefix ensures that target names across packages don't collide
 # add_executable(${PROJECT_NAME}_node src/AVP_Simulator_node.cpp)
 
-add_executable(simulator_node src/simulator_node_main.cc 
-            src/Simulator/simulating_node.cc 
-            src/Simulator/odometry_simulator.cc 
-            src/Simulator/hdMap.cc
-            )
-add_executable(keyBoardCtl_node src/keyBoardCtl_node.cc)
+#add_executable(simulator_node src/simulator_node_main.cc 
+#            src/Simulator/simulating_node.cc 
+#            src/Simulator/odometry_simulator.cc 
+#            src/Simulator/hdMap.cc
+#            )
+#add_executable(keyBoardCtl_node src/keyBoardCtl_node.cc)
 add_executable(mapping_node src/mapping_node_main.cc
             src/mapping/local_trajectory_builder.cc
             src/mapping/pose_extrapolator.cc
@@ -211,15 +211,15 @@ target_link_libraries(pose_adjustment_node
   ${CERES_LIBRARIES}
 )
 
-target_link_libraries(simulator_node
-  ${catkin_LIBRARIES}
-  ${OpenCV_LIBRARIES}
-  ${PCL_LIBRARIES}
-  )
+#target_link_libraries(simulator_node
+#  ${catkin_LIBRARIES}
+#  ${OpenCV_LIBRARIES}
+#  ${PCL_LIBRARIES}
+#  )
 
-target_link_libraries(keyBoardCtl_node
-${catkin_LIBRARIES}
-)
+#target_link_libraries(keyBoardCtl_node
+#${catkin_LIBRARIES}
+#)
 
 target_link_libraries(mapping_node   
 ${catkin_LIBRARIES}
